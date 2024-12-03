@@ -1,0 +1,14 @@
+{
+  "name": "five-design-agency",
+  "version": "1.0.0",
+  "description": "Site web de l'agence Five Design",
+  "scripts": {
+    "install:all": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\"",
+    "start:dev": "concurrently \"cd frontend && npm start\" \"cd backend && npm run dev\"",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
